@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  node:
+    container_name: testnet
+    image: geth
+    entrypoint: /geth
+    command: "--datadir /root/data --rpc --rpcaddr 0.0.0.0 --rpcport 8545 --ws --wsaddr 0.0.0.0 --wsport 8546 --mine --etherbase 0xf3e1139f77ad1c643b7f7f8271b08b7084e8b751"
+    ports:
+      - "8545:8545"
+      - "8546:8546"
+      - "30303:30303"
