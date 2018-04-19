@@ -5,6 +5,8 @@
 1. Prepare your `genesis.json`
 2. Create a `keysotre` for miner
 
+> This is a toy example, don't upload your keystore on the github.
+
 ## Build geth image
 
 ```
